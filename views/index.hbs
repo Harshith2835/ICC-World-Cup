@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <title>Home</title>
+  </head>
+  <body  class="bg-dark ">
+    {{> navbar data=detail}}
+    {{> slider}}
+    <div class="container mt-5 mb-5">
+      <div class="row mx-md-n5">
+        {{!-- card 1 --}}
+        <div class="col-md-4 col px-md-5" id="card_1">
+          <div class="card bg-secondary shine" style="width: 18rem;">
+            <img src="../static/images/card_table_gif.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Solo Player Stats</h5>
+              <p class="card-text color_text">Solo player stats typically refer to the individual performance.These stats are crucial for evaluating the performance of a player and can provide valuable insights into their strengths and weaknesses</p>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Stats
+                </button>
+                 <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Arshdeep%20Singh" method="get">Arshdeep Singh</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Axar%20Patel">Axar Patel</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Hardik%20Pandya">Hardik Pandya</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Ishan%20Kishan">Ishan Kishan</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Jasprit%20Bumrah">Jasprit Bumrah</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/KL%20Rahul">KL Rahul</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Deepak%20Chahar">Deepak Chahar</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Kuldeep%20Yadav">Kuldeep Yadav</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Mohammad%20Siraj">Mohammad Siraj</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/R%20Ashwin">R Ashwin</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/R%20jadeja">R jadeja</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Rishabh%20Pant">Rishabh Pant</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Rohit%20Sharma">Rohit Sharma</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Ruturaj%20Gaikwad">Ruturaj Gaikwad</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Sanju%20Samson">Sanju Samson</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shardul%20Thakur">Shardul Thakur</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shikhar%20Dhawan">Shikhar Dhawan</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shreyas%20Iyer">Shreyas Iyer</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shubhman%20Gill">Shubhman Gill</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Suryakumar%20Yadav">Suryakumar Yadav</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Umesh%20Yadav">Umesh Yadav</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Virat%20Kohli">Virat Kohli</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Washington%20Sundar">Washington Sundar</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Y%20chahal">Y chahal</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{!-- card 3 --}}
+        <div class="col-md-4 col px-md-5" id="card_2">
+          <div class="card bg-secondary shine" style="width: 18rem;">
+            <img src="../static/images/player_info_logo.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">About Player</h5>
+              <p class="card-text color_text">Gives small information about the players. So that we get to know them well! </p>
+              <a href="http://localhost:5556/player_info" class="btn btn-primary">Player Info</a>
+            </div>
+          </div>
+        </div>
+        {{!-- card 2 --}}
+       <div class="col-md-4 col px-md-5" id="card_2">
+          <div class="card bg-secondary shine" style="width: 18rem;">
+            <img src="../static/images/card_graph_gif.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Comparison</h5>
+              <p class="card-text color_text">By comparing players in different areas of the game, we can get a quick overview of their strengths and weaknesses, and helps understand how each player contributes to the team's success.</p>
+              
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Compare
+                </button>
+                 <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Arshdeep_Singh" method="get">Arshdeep Singh</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Axar_Patel">Axar Patel</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Hardik_Pandya">Hardik Pandya</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Ishan_Kishan">Ishan Kishan</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Jasprit_Bumrah">Jasprit Bumrah</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/KL_Rahul">KL Rahul</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Deepak_Chahar">Deepak Chahar</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Kuldeep_Yadav">Kuldeep Yadav</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Mohammad_Siraj">Mohammad Siraj</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/R_Ashwin">R Ashwin</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/R_jadeja">R jadeja</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Rishabh_Pant">Rishabh Pant</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Rohit_Sharma">Rohit Sharma</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Ruturaj_Gaikwad">Ruturaj Gaikwad</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Sanju_Samson">Sanju Samson</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shardul_Thakur">Shardul Thakur</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shikhar_Dhawan">Shikhar Dhawan</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shreyas_Iyer">Shreyas Iyer</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Shubhman_Gill">Shubhman Gill</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Suryakumar_Yadav">Suryakumar Yadav</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Umesh_Yadav">Umesh Yadav</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Virat_Kohli">Virat Kohli</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Washington_Sundar">Washington Sundar</a></li>
+                        <li><a class="dropdown-item color_text" href="http://localhost:5556/Y_chahal">Y chahal</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+  <footer class="bg-ldark text-center border-top py-5 text-light">
+    <div class="container ">
+      <div class="col-md-12 ">
+        © 2023 Copyright || <span> Surya | Sujit</span>
+      </div>
+    </div>
+  </footer>
+</html>
