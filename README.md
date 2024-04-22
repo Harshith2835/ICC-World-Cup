@@ -42,5 +42,6 @@ With the Cricket World Cup 2023 looming, our project focuses on gathering data o
 6. Once the server starts listening on port 5556, open a web browser and visit "localhost:5556".
 
 ## Team Members Info
+- A.Harshith(IMT2022023)
 - Sri Surya Makkapati (IMT2022567)
 - G Sujit (IMT2022558)
